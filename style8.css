@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fbfbb0;
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+h1{
+    color: #333;
+}
+
+p{
+    color: gray;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin-top: 20px;
+}
+
+h2{
+    margin-top: 30px;
+    color: #444;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 8px 12px;
+    margin-right: 10px;
+}

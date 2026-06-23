@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+    Student Name:
+    <input type="text" id="name">
+    <br><br>
+
+    Age:
+    <input type="number" id="age">
+    <br><br>
+
+    Email Address:
+    <input type="email" id="email">
+    <br><br>
+
+    Gender:
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    Course Selection:
+    <select id="course">
+        <option>Information Technology</option>
+        <option>Data Science</option>
+        <option>Business Management</option>
+        <option>Software Engineering</option>
+    </select>
+    <br><br>
+
+    <input type="checkbox" id="terms">
+    I accept Terms and Conditions
+    <br><br>
+
+    <button type="button" onclick="register()">
+        Register
+    </button>
+
+</form>
+
+<br>
+
+<p id="output"></p>
+
+<script src="weblab22.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+<html >
+<head>
+ 
+    <title>Study Materials Book Shop</title>
+    <link rel="stylesheet" href="style..1.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Study Materials Book Shop</h1>
+        </header>
+
+        <div class="banner">
+            <img src="c:\Users\MY PC\Downloads\images (2).jpeg" alt="Library Image" width="600">
+        </div>
+
+        <table border="1">
+            <tr>
+                <th rowspan="2">Book ID</th>
+                <th rowspan="2">Category</th>
+                <th colspan="2">Book Details</th>
+            </tr>
+            <tr>
+                <th>Book Name</th>
+                <th>Price (Rs.)</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td rowspan="2">Programming</td>
+                <td>Web Development Fundamentals</td>
+                <td>2500</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>JavaScript Essentials</td>
+                <td>3000</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td rowspan="2">Database</td>
+                <td>Database Management Systems</td>
+                <td>2800</td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>SQL Practical Guide</td>
+                <td>2200</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    Special Offer: Buy 3 Books and Get 10% Discount
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div class="buttons">
+            <button onclick="checkDiscount()">Check Discount</button>
+            <button onclick="membershipStatus()">Membership Status</button>
+            <button onclick="checkStock()">Check Stock</button>
+            <button onclick="deliveryDetails()">Delivery Details</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        function checkDiscount() {
+            let amount = parseFloat(prompt("Enter the total purchase amount (Rs.):"));
+
+            if (amount >= 5000) {
+                alert("Congratulations! You are eligible for a discount.");
+            } else {
+                alert("Sorry! No discount is available for purchases below Rs. 5000.");
+            }
+        }
+
+
+        function membershipStatus() {
+            let member = prompt("Are you a registered member? (yes/no)");
+
+            if (member.toLowerCase() == "yes") {
+                alert("Membership Benefits: You can enjoy special discounts and exclusive offers.");
+            } else {
+                alert("Please register as a member to enjoy additional benefits.");
+            }
+        }
+
+  function checkStock() {
+    let quantity = prompt("Enter the quantity of books required:");
+
+    if (quantity <= 500) {
+        alert("Stock Available");
+    } else {
+        alert("Out of Stock");
+    }
+}
+
+     
+        function deliveryDetails() {
+            let city = prompt("Enter your city:");
+
+            if (city.toLowerCase() == "colombo") {
+                alert("Free Delivery Available for Colombo.");
+            } else {
+                alert("Delivery charge will apply for your location.");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

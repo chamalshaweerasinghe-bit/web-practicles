@@ -1,0 +1,192 @@
+/* General Styling */
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+}
+
+/* Header Styling */
+header{
+    background-color: #ff914d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+
+    /* Smooth hover effect */
+    transition: 0.3s;
+}
+
+/* Navigation hover animation */
+nav a:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+
+/* Welcome Section */
+.welcome{
+    text-align: center;
+    padding: 40px;
+}
+
+/* Button animation */
+.welcome button{
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button grows slightly on hover */
+.welcome button:hover{
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
+/* Pet Gallery */
+.pet-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pet-gallery img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    /* Smooth image animation */
+    transition: 0.5s;
+}
+
+/* Image zoom and shadow effect */
+.pet-gallery img:hover{
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(80%);
+    box-shadow: 0px 5px 15px gray;
+}
+
+/* Table Styling */
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: #ff914d;
+    color: white;
+}
+
+th, td{
+    padding: 15px;
+    text-align: center;
+}
+
+/* Table row hover effect */
+tr:hover{
+    background-color: #ffe0cc;
+    transition: 0.3s;
+}
+
+/* Popup Image Section */
+.popup-container{
+    width: 60%;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.popup-container img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Hidden text */
+.popup-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 0;
+
+    /* Smooth popup effect */
+    transition: 0.5s;
+}
+
+/* Image darkens on hover */
+.popup-container:hover img{
+    filter: brightness(40%);
+}
+
+/* Text appears smoothly */
+.popup-container:hover .popup-text{
+    opacity: 1;
+}
+
+/* Form Styling */
+.form-section{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea{
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+}
+
+form button{
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Submit button hover animation */
+form button:hover{
+    background-color: #ff6600;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer{
+    background-color: #ff914d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

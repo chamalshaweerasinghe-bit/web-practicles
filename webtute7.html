@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <title>Sri Lanka Tourism</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Welcome to Sri Lanka Tourism</h1>
+
+    <p>
+        Sri Lanka is a beautiful island with beaches, mountains,
+        and cultural heritage sites.
+    </p>
+
+    <img src="C:\Users\MY PC\Downloads\Sigiriya-Rock-Sri-Lanka.jpg" alt="Sigiriya">
+
+    <h2>Popular Tourist Places</h2>
+
+    <ul>
+        <li>Sigiriya</li>
+        <li>Ella</li>
+        <li>Galle Fort</li>
+    </ul>
+
+    <button onclick="showMessage()">Show Message</button>
+    <button onclick="enterDetails()">Enter Details</button>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        function showMessage() {
+            alert("Welcome to Sri Lanka Tourism!");
+        }
+        function enterDetails() {
+            var name = prompt("Please enter your name:");
+            alert("Hello, " + name + "! Enjoy your visit to Sri Lanka.");
+        }
+        function calculate() {
+            var num1 = parseFloat(prompt("Enter the first number:"));
+            var num2 = parseFloat(prompt("Enter the second number:"));
+            var sum = num1 + num2;
+            alert("The sum of " + num1 + " and " + num2 + " is: " + sum);
+        }
+
+</script>
+</div>
+
+</body>
+</html>
